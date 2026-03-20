@@ -210,6 +210,86 @@ new Swiper('.galeria-swiper', {
   },
 });
 
+// ===== LIGHTBOX =====
+const lightbox        = document.getElementById('lightbox');
+const lightboxImg     = document.getElementById('lightboxImg');
+const lightboxContador = document.getElementById('lightboxContador');
+const lightboxFechar  = document.getElementById('lightboxFechar');
+const lightboxPrev    = document.getElementById('lightboxPrev');
+const lightboxNext    = document.getElementById('lightboxNext');
+
+// Coleta todas as imagens da galeria em ordem
+const galeriaImagens = Array.from(
+  document.querySelectorAll('.galeria-item img')
+);
+let indiceAtual = 0;
+
+function abrirLightbox(indice) {
+  indiceAtual = indice;
+  const img = galeriaImagens[indiceAtual];
+
+  // Anima saída antes de trocar a imagem
+  lightboxImg.style.opacity = '0';
+  lightboxImg.style.transform = 'scale(0.92)';
+
+  setTimeout(() => {
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxContador.textContent = `${indiceAtual + 1} / ${galeriaImagens.length}`;
+
+    lightboxImg.style.opacity = '1';
+    lightboxImg.style.transform = 'scale(1)';
+  }, 150);
+
+  lightbox.classList.add('aberto');
+  lightbox.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('lightbox-aberto');
+}
+
+function fecharLightbox() {
+  lightbox.classList.remove('aberto');
+  lightbox.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('lightbox-aberto');
+}
+
+function navegar(direcao) {
+  indiceAtual = (indiceAtual + direcao + galeriaImagens.length) % galeriaImagens.length;
+  abrirLightbox(indiceAtual);
+}
+
+// Abre ao clicar em qualquer imagem da galeria
+galeriaImagens.forEach((img, i) => {
+  img.closest('.galeria-item').addEventListener('click', () => abrirLightbox(i));
+});
+
+// Botões
+lightboxFechar.addEventListener('click', fecharLightbox);
+lightboxPrev.addEventListener('click', () => navegar(-1));
+lightboxNext.addEventListener('click', () => navegar(1));
+
+// Fecha ao clicar no fundo escuro
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox || e.target === lightboxImg.parentElement) fecharLightbox();
+});
+
+// Teclado: ESC fecha, setas navegam
+document.addEventListener('keydown', (e) => {
+  if (!lightbox.classList.contains('aberto')) return;
+  if (e.key === 'Escape')     fecharLightbox();
+  if (e.key === 'ArrowLeft')  navegar(-1);
+  if (e.key === 'ArrowRight') navegar(1);
+});
+
+// Touch/swipe no lightbox (mobile)
+let touchStartX = 0;
+lightbox.addEventListener('touchstart', (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+}, { passive: true });
+lightbox.addEventListener('touchend', (e) => {
+  const diff = touchStartX - e.changedTouches[0].screenX;
+  if (Math.abs(diff) > 50) navegar(diff > 0 ? 1 : -1);
+}, { passive: true });
+
 // ===== RIPPLE NOS BOTÕES =====
 function criarRipple(e) {
   const btn = e.currentTarget;
