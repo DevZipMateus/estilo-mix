@@ -187,10 +187,6 @@ new Swiper('.galeria-swiper', {
     prevEl: '.galeria-prev',
     nextEl: '.galeria-next',
   },
-  pagination: {
-    el: '.galeria-paginacao',
-    clickable: true,
-  },
   breakpoints: {
     600: {
       slidesPerView: 2,
