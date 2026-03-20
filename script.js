@@ -170,6 +170,46 @@ if (sobreStats) {
   observadorStats.observe(sobreStats);
 }
 
+// ===== CARROSSEL DE GALERIA (Swiper) =====
+new Swiper('.galeria-swiper', {
+  loop: true,
+  speed: 600,
+  grabCursor: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+  slidesPerView: 1.2,
+  spaceBetween: 16,
+  centeredSlides: true,
+  navigation: {
+    prevEl: '.galeria-prev',
+    nextEl: '.galeria-next',
+  },
+  pagination: {
+    el: '.galeria-paginacao',
+    clickable: true,
+  },
+  breakpoints: {
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      centeredSlides: false,
+    },
+    900: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+      centeredSlides: false,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+      centeredSlides: false,
+    },
+  },
+});
+
 // ===== RIPPLE NOS BOTÕES =====
 function criarRipple(e) {
   const btn = e.currentTarget;
