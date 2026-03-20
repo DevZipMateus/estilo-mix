@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estilo Mix</title>
+  <meta name="description" content="Estilo Mix — A moda que te surpreende! Roupas infantis, adulto e juvenil em Terenos/MS. Variedade, qualidade e preço justo para toda a família.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Estilo Mix">
+  <meta property="og:description" content="A moda que te surpreende! Roupas infantis, adulto e juvenil em Terenos/MS.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://estilomix.com.br/">
+  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Estilo Mix">
+  <meta name="twitter:description" content="A moda que te surpreende! Roupas infantis, adulto e juvenil.">
+  <meta name="twitter:image" content="images/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="header-container">
+      <a href="#inicio" class="logo" aria-label="Estilo Mix — Página inicial">
+        <span class="logo-texto">ESTILO <span class="logo-destaque">MIX</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <!-- SUBSTITUA "NUMERO_AQUI" pelo número com DDI+DDD+número, ex: 5567999991234 -->
+      <a href="https://wa.me/55NUMERO_AQUI" class="header-whatsapp" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MENU MOBILE (irmão do header, nunca filho) ===== -->
+  <nav id="navMenu" class="mobile-nav" aria-label="Menu mobile" aria-hidden="true">
+    <a href="#inicio" class="nav-link">Início</a>
+    <a href="#sobre" class="nav-link">Sobre</a>
+    <a href="#produtos" class="nav-link">Produtos</a>
+    <a href="#depoimentos" class="nav-link">Depoimentos</a>
+    <a href="#contato" class="nav-link">Contato</a>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="inicio" class="hero">
+    <div class="hero-decoracao" aria-hidden="true">
+      <div class="anel anel-1"></div>
+      <div class="anel anel-2"></div>
+      <div class="anel anel-3"></div>
+      <div class="faixa-diagonal"></div>
+    </div>
+
+    <div class="hero-conteudo">
+      <span class="hero-badge">
+        <i class="fas fa-circle" aria-hidden="true"></i>
+        Nova coleção disponível
+      </span>
+
+      <h1>ESTILO<br><span class="h1-destaque">MIX</span></h1>
+
+      <h2>A moda que te surpreende</h2>
+
+      <p>Roupas infantis, adulto e juvenil com estilo, qualidade<br class="br-desktop"> e preço justo para toda a família.</p>
+
+      <div class="hero-botoes">
+        <a href="#produtos" class="btn-primario">
+          <i class="fas fa-th-large" aria-hidden="true"></i> Ver produtos
+        </a>
+        <a href="https://wa.me/55NUMERO_AQUI" class="btn-contorno" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i> Fale conosco
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-lateral" aria-hidden="true">
+      <div class="hero-icone-box">
+        <i class="fas fa-tshirt"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+
+        <div class="sobre-visual">
+          <div class="sobre-card-principal">
+            <i class="fas fa-store" aria-hidden="true"></i>
+            <p>Nossa loja</p>
+          </div>
+          <div class="sobre-stats">
+            <div class="stat">
+              <strong>+5 anos</strong>
+              <span>de experiência</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span>comprometida</span>
+            </div>
+            <div class="stat">
+              <strong>3 linhas</strong>
+              <span>de moda</span>
+            </div>
+          </div>
+          <div class="sobre-selo">
+            <i class="fas fa-heart" aria-hidden="true"></i>
+            <span>Feito com amor em Terenos/MS</span>
+          </div>
+        </div>
+
+        <div class="sobre-texto">
+          <span class="etiqueta-secao">Nossa história</span>
+          <h2>De um pequeno espaço para uma loja completa</h2>
+
+          <p>Tudo começou quando abrimos nossa primeira loja de lingerie num pequeno espaço. As clientes gostaram tanto dos produtos que pediram um espaço maior para serem melhor atendidas.</p>
+
+          <p>Foi então que resolvemos alugar um espaço maior. Com o tempo, as clientes foram pedindo novidades — roupas infantis, moda praia, fitness — e foi assim que nos tornamos uma loja com um pouco de tudo para toda a família!</p>
+
+          <div class="mvv-lista">
+            <div class="mvv-item">
+              <div class="mvv-icone" aria-hidden="true"><i class="fas fa-bullseye"></i></div>
+              <div>
+                <h3>Missão</h3>
+                <p>Sempre atender da melhor forma nossos clientes, com qualidade e carinho.</p>
+              </div>
+            </div>
+            <div class="mvv-item">
+              <div class="mvv-icone" aria-hidden="true"><i class="fas fa-eye"></i></div>
+              <div>
+                <h3>Visão</h3>
+                <p>Ser referência em moda na região, surpreendendo a cada nova coleção.</p>
+              </div>
+            </div>
+            <div class="mvv-item">
+              <div class="mvv-icone" aria-hidden="true"><i class="fas fa-star"></i></div>
+              <div>
+                <h3>Valores</h3>
+                <p>Qualidade, acolhimento e estilo para todos os momentos da vida.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUTOS ===== -->
+  <section id="produtos" class="produtos">
+    <div class="container">
+      <div class="cabecalho-secao">
+        <span class="etiqueta-secao">O que oferecemos</span>
+        <h2>Nossas categorias</h2>
+        <p>Encontre tudo o que você e sua família precisam em um só lugar</p>
+      </div>
+
+      <div class="produtos-grid">
+
+        <article class="produto-card">
+          <div class="produto-icone">
+            <i class="fas fa-child" aria-hidden="true"></i>
+          </div>
+          <h3>Moda infantil</h3>
+          <p>Roupas confortáveis, coloridas e cheias de estilo para os pequenos exploradores.</p>
+          <ul>
+            <li>Conjuntos e bodies</li>
+            <li>Vestidos e shorts</li>
+            <li>Roupas de bebê</li>
+            <li>Peças juvenis</li>
+          </ul>
+        </article>
+
+        <article class="produto-card destaque">
+          <div class="produto-badge">Mais vendido</div>
+          <div class="produto-icone">
+            <i class="fas fa-tshirt" aria-hidden="true"></i>
+          </div>
+          <h3>Moda adulto</h3>
+          <p>Looks completos para o dia a dia, trabalho e todas as ocasiões da vida.</p>
+          <ul>
+            <li>Blusas e camisas</li>
+            <li>Calças e shorts</li>
+            <li>Vestidos e macaquinhos</li>
+            <li>Conjuntos completos</li>
+          </ul>
+        </article>
+
+        <article class="produto-card">
+          <div class="produto-icone">
+            <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+          </div>
+          <h3>Moda juvenil</h3>
+          <p>Tendências e looks modernos para quem quer estar sempre antenado na moda.</p>
+          <ul>
+            <li>Moda praia</li>
+            <li>Fitness e esportivo</li>
+            <li>Casual e street</li>
+            <li>Lingerie e íntimos</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIFERENCIAIS ===== -->
+  <section class="diferenciais">
+    <div class="container">
+      <div class="diferenciais-grid">
+        <div class="diferencial-item">
+          <i class="fas fa-tags" aria-hidden="true"></i>
+          <h3>Preço justo</h3>
+          <p>Moda de qualidade com preços acessíveis para toda a família.</p>
+        </div>
+        <div class="diferencial-item">
+          <i class="fas fa-heart" aria-hidden="true"></i>
+          <h3>Atendimento especial</h3>
+          <p>Cada cliente recebe atenção personalizada para encontrar o look perfeito.</p>
+        </div>
+        <div class="diferencial-item">
+          <i class="fas fa-layer-group" aria-hidden="true"></i>
+          <h3>Variedade</h3>
+          <p>Do infantil ao adulto, encontre tudo o que precisa em um só lugar.</p>
+        </div>
+        <div class="diferencial-item">
+          <i class="fas fa-sync-alt" aria-hidden="true"></i>
+          <h3>Novidades sempre</h3>
+          <p>Coleções renovadas com as últimas tendências da moda nacional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section id="depoimentos" class="depoimentos">
+    <div class="container">
+      <div class="cabecalho-secao">
+        <span class="etiqueta-secao">O que dizem de nós</span>
+        <h2>Depoimentos de clientes</h2>
+        <p>A satisfação das nossas clientes é a nossa maior recompensa</p>
+      </div>
+
+      <div class="depoimentos-grid">
+
+        <article class="depoimento-card">
+          <div class="estrelas" aria-label="5 estrelas">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"Amei as roupas! Sempre encontro o que procuro e o atendimento é maravilhoso. Super recomendo a Estilo Mix!"</p>
+          <div class="depoimento-autor">
+            <div class="avatar" aria-hidden="true">AM</div>
+            <div>
+              <strong>Ana Maria S.</strong>
+              <span>Cliente fiel</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="depoimento-card">
+          <div class="estrelas" aria-label="5 estrelas">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"Compro para toda a minha família aqui. As roupas infantis são lindas e os preços são muito bons!"</p>
+          <div class="depoimento-autor">
+            <div class="avatar" aria-hidden="true">JC</div>
+            <div>
+              <strong>Juliane C.</strong>
+              <span>Cliente fiel</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="depoimento-card">
+          <div class="estrelas" aria-label="5 estrelas">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"A melhor loja da região! Sempre saio de lá super feliz com as compras. Atendimento nota 10!"</p>
+          <div class="depoimento-autor">
+            <div class="avatar" aria-hidden="true">PR</div>
+            <div>
+              <strong>Patrícia R.</strong>
+              <span>Cliente fiel</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="depoimento-card">
+          <div class="estrelas" aria-label="5 estrelas">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"Qualidade incrível e variedade enorme. Encontrei peças para meu bebê e para mim mesma. Indico para todos!"</p>
+          <div class="depoimento-autor">
+            <div class="avatar" aria-hidden="true">FS</div>
+            <div>
+              <strong>Fernanda S.</strong>
+              <span>Cliente fiel</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="depoimento-card">
+          <div class="estrelas" aria-label="5 estrelas">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"Loja top! Sempre renovo meu guarda-roupa aqui. As peças são lindas e chegam novidades toda semana."</p>
+          <div class="depoimento-autor">
+            <div class="avatar" aria-hidden="true">MC</div>
+            <div>
+              <strong>Mônica C.</strong>
+              <span>Cliente fiel</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="depoimento-card">
+          <div class="estrelas" aria-label="5 estrelas">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"Melhor custo-benefício que já vi. Roupas com ótima qualidade e preços que cabem no bolso!"</p>
+          <div class="depoimento-autor">
+            <div class="avatar" aria-hidden="true">LB</div>
+            <div>
+              <strong>Larissa B.</strong>
+              <span>Cliente fiel</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <div class="cabecalho-secao">
+        <span class="etiqueta-secao claro">Venha nos visitar</span>
+        <h2>Informações de contato</h2>
+      </div>
+
+      <div class="contato-grid">
+        <div class="contato-card">
+          <div class="contato-icone" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></div>
+          <h3>Endereço</h3>
+          <p>Rua Pedro Celestino, 25B<br>Terenos — MS</p>
+        </div>
+        <div class="contato-card">
+          <div class="contato-icone" aria-hidden="true"><i class="fas fa-clock"></i></div>
+          <h3>Horário de funcionamento</h3>
+          <p>
+            Segunda a sexta: 08h às 11h e 13h às 18h<br>
+            Sábado: 08h às 12h
+          </p>
+        </div>
+        <div class="contato-card">
+          <div class="contato-icone" aria-hidden="true"><i class="fas fa-envelope"></i></div>
+          <h3>E-mail</h3>
+          <p><a href="mailto:gilciane.nunesrv@hotmail.com">gilciane.nunesrv@hotmail.com</a></p>
+        </div>
+        <div class="contato-card">
+          <div class="contato-icone" aria-hidden="true"><i class="fab fa-instagram"></i></div>
+          <h3>Instagram</h3>
+          <p><a href="https://instagram.com/estilomixterenos" target="_blank" rel="noopener noreferrer">@estilomixterenos</a></p>
+        </div>
+      </div>
+
+      <div class="contato-cta">
+        <h3>Quer ver nossas novidades?</h3>
+        <p>Entre em contato pelo WhatsApp ou nos siga no Instagram e acompanhe as coleções!</p>
+        <div class="cta-botoes">
+          <a href="https://wa.me/55NUMERO_AQUI" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i> Falar no WhatsApp
+          </a>
+          <a href="https://instagram.com/estilomixterenos" class="btn-instagram" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram" aria-hidden="true"></i> Ver no Instagram
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-conteudo">
+        <div class="footer-marca">
+          <span class="logo-texto">ESTILO <span class="logo-destaque">MIX</span></span>
+          <p>A moda que te surpreende!</p>
+        </div>
+        <nav class="footer-links" aria-label="Links do rodapé">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#produtos">Produtos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <div class="footer-social">
+          <a href="https://instagram.com/estilomixterenos" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Estilo Mix">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://wa.me/55NUMERO_AQUI" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da Estilo Mix">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>© 2025 Estilo Mix · CNPJ 34.745.609/0001-01 · Terenos/MS</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLUTUANTE ===== -->
+  <a href="https://wa.me/55NUMERO_AQUI" class="whatsapp-flutuante" target="_blank" rel="noopener noreferrer" aria-label="Falar com Estilo Mix pelo WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- Rodapé MonteSite - Atualização Automática -->
+  <div id="montesite-footer-badge"></div>
+  <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

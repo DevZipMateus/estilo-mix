@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://estilomix.com.br/sitemap.xml
