@@ -1367,13 +1367,25 @@ a {
   to   { opacity: 1; }
 }
 
-.hero-badge   { animation: subirFade 0.7s ease both; animation-delay: 0.10s; }
-.hero h1      { animation: subirFade 0.9s ease both; animation-delay: 0.28s; }
-.hero h2      { animation: subirFade 0.7s ease both; animation-delay: 0.55s; }
-.hero p       { animation: subirFade 0.7s ease both; animation-delay: 0.70s; }
-.hero-botoes  { animation: subirFade 0.7s ease both; animation-delay: 0.85s; }
-.hero-lateral { animation: aparecerLateral 1.1s cubic-bezier(0.22,1,0.36,1) both; animation-delay: 0.40s; }
-.hero-decoracao { animation: aparecerDecoracao 1.4s ease both; animation-delay: 0.05s; }
+/* Elementos do hero invisíveis até o loader terminar */
+.hero-badge,
+.hero h1,
+.hero h2,
+.hero p,
+.hero-botoes,
+.hero-lateral,
+.hero-decoracao {
+  opacity: 0;
+}
+
+/* Animações só disparam após body receber .site-pronto */
+.site-pronto .hero-badge     { animation: subirFade 0.7s ease both; animation-delay: 0.10s; }
+.site-pronto .hero h1        { animation: subirFade 0.9s ease both; animation-delay: 0.28s; }
+.site-pronto .hero h2        { animation: subirFade 0.7s ease both; animation-delay: 0.55s; }
+.site-pronto .hero p         { animation: subirFade 0.7s ease both; animation-delay: 0.70s; }
+.site-pronto .hero-botoes    { animation: subirFade 0.7s ease both; animation-delay: 0.85s; }
+.site-pronto .hero-lateral   { animation: aparecerLateral 1.1s cubic-bezier(0.22,1,0.36,1) both; animation-delay: 0.45s; }
+.site-pronto .hero-decoracao { animation: aparecerDecoracao 1.4s ease both; animation-delay: 0.05s; }
 
 /* ===== Hero badge — shimmer sweep ===== */
 .hero-badge {
@@ -1546,6 +1558,80 @@ a {
 
 .sobre-selo {
   animation: pulsoSelo 3.5s ease-in-out infinite;
+}
+
+/* ===== LOADER ===== */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #0A0A0A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+
+#loader.saindo {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.loader-logo {
+  width: clamp(200px, 42vw, 300px);
+  height: auto;
+  animation: loaderPulso 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px rgba(201, 168, 76, 0.40));
+}
+
+@keyframes loaderPulso {
+  0%, 100% { transform: scale(1);     filter: drop-shadow(0 0 16px rgba(201, 168, 76, 0.35)); }
+  50%       { transform: scale(1.05); filter: drop-shadow(0 0 32px rgba(201, 168, 76, 0.60)); }
+}
+
+.loader-barra-container {
+  width: clamp(200px, 42vw, 320px);
+  height: 3px;
+  background: rgba(201, 168, 76, 0.15);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.loader-barra {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--amarelo-escuro), var(--amarelo), #e0c070);
+  border-radius: 3px;
+  transition: width 2.8s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 8px rgba(201, 168, 76, 0.55);
+}
+
+.loader-texto {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+@keyframes pontos {
+  0%   { content: '';    }
+  25%  { content: '.';   }
+  50%  { content: '..';  }
+  75%  { content: '...'; }
+  100% { content: '';    }
+}
+
+.loader-dots::after {
+  content: '';
+  animation: pontos 1.4s steps(1) infinite;
 }
 
 /* ===== Desativar animações de entrada para quem prefere menos movimento ===== */

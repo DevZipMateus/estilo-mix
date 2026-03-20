@@ -1,5 +1,32 @@
 // Estilo Mix — JavaScript Principal
 
+// ===== SCROLL AO TOPO NO F5 / CARREGAMENTO =====
+// Impede que o browser restaure a posição de scroll anterior
+history.scrollRestoration = 'manual';
+window.scrollTo(0, 0);
+
+// ===== LOADER — 3 segundos =====
+const loader     = document.getElementById('loader');
+const loaderBarra = document.getElementById('loaderBarra');
+
+// Inicia a barra de progresso logo após o paint inicial
+requestAnimationFrame(() => {
+  requestAnimationFrame(() => {
+    loaderBarra.style.width = '100%';
+  });
+});
+
+setTimeout(() => {
+  // Fade out do loader
+  loader.classList.add('saindo');
+
+  // Libera os efeitos do hero
+  document.body.classList.add('site-pronto');
+
+  // Remove o elemento do DOM após a transição terminar
+  setTimeout(() => loader.remove(), 750);
+}, 3000);
+
 // ===== BARRA DE PROGRESSO DE SCROLL =====
 const barraProgresso = document.createElement('div');
 barraProgresso.id = 'progresso-scroll';
