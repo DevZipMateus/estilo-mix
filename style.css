@@ -5,10 +5,10 @@
    ===================================================== */
 
 :root {
-  --amarelo:       #FFD700;
-  --amarelo-escuro: #E6C200;
-  --amarelo-claro: #FFF8D6;
-  --amarelo-bg:    rgba(255, 215, 0, 0.10);
+  --amarelo:       #C9A84C;
+  --amarelo-escuro: #A8873C;
+  --amarelo-claro: #F5EDD4;
+  --amarelo-bg:    rgba(201, 168, 76, 0.10);
   --preto:         #0A0A0A;
   --escuro:        #1A1A1A;
   --escuro-meio:   #2A2A2A;
@@ -23,7 +23,7 @@
   --trans:     0.3s ease;
   --sombra:    0 4px 24px rgba(0, 0, 0, 0.08);
   --sombra-lg: 0 8px 40px rgba(0, 0, 0, 0.14);
-  --sombra-am: 0 4px 20px rgba(255, 215, 0, 0.35);
+  --sombra-am: 0 4px 20px rgba(201, 168, 76, 0.40);
 }
 
 /* ===== RESET ===== */
@@ -75,7 +75,7 @@ a {
   text-transform: uppercase;
   color: var(--amarelo-escuro);
   background: var(--amarelo-bg);
-  border: 1px solid rgba(255, 215, 0, 0.2);
+  border: 1px solid rgba(201, 168, 76, 0.2);
   padding: 6px 16px;
   border-radius: 50px;
   margin-bottom: 16px;
@@ -83,8 +83,8 @@ a {
 
 .etiqueta-secao.claro {
   color: var(--amarelo);
-  background: rgba(255, 215, 0, 0.12);
-  border-color: rgba(255, 215, 0, 0.25);
+  background: rgba(201, 168, 76, 0.12);
+  border-color: rgba(201, 168, 76, 0.25);
 }
 
 .cabecalho-secao {
@@ -142,7 +142,7 @@ a {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   z-index: 1000;
-  border-bottom: 1px solid rgba(255, 215, 0, 0.12);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.12);
   transition: box-shadow var(--trans);
 }
 
@@ -198,7 +198,7 @@ a {
 .desktop-nav a:hover,
 .desktop-nav a.ativo {
   color: var(--amarelo);
-  background: rgba(255, 215, 0, 0.10);
+  background: rgba(201, 168, 76, 0.10);
 }
 
 .header-whatsapp {
@@ -281,7 +281,7 @@ a {
 
 #navMenu a:hover {
   color: var(--amarelo);
-  background: rgba(255, 215, 0, 0.08);
+  background: rgba(201, 168, 76, 0.08);
   padding-left: 24px;
 }
 
@@ -307,27 +307,27 @@ a {
 .anel {
   position: absolute;
   border-radius: 50%;
-  border: 1px solid rgba(255, 215, 0, 0.10);
+  border: 1px solid rgba(201, 168, 76, 0.10);
   top: 50%;
   right: -80px;
   transform: translateY(-50%);
 }
 
 .anel-1 { width: 700px; height: 700px; }
-.anel-2 { width: 480px; height: 480px; border-color: rgba(255, 215, 0, 0.14); }
+.anel-2 { width: 480px; height: 480px; border-color: rgba(201, 168, 76, 0.14); }
 .anel-3 {
   width: 260px;
   height: 260px;
-  background: rgba(255, 215, 0, 0.04);
-  border-color: rgba(255, 215, 0, 0.18);
+  background: rgba(201, 168, 76, 0.04);
+  border-color: rgba(201, 168, 76, 0.18);
 }
 
 .faixa-diagonal {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 75% 40%, rgba(255, 215, 0, 0.10) 0%, transparent 55%),
-    radial-gradient(ellipse at 15% 80%, rgba(255, 215, 0, 0.05) 0%, transparent 45%);
+    radial-gradient(ellipse at 75% 40%, rgba(201, 168, 76, 0.10) 0%, transparent 55%),
+    radial-gradient(ellipse at 15% 80%, rgba(201, 168, 76, 0.05) 0%, transparent 45%);
 }
 
 .hero-conteudo {
@@ -345,8 +345,8 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: rgba(255, 215, 0, 0.10);
-  border: 1px solid rgba(255, 215, 0, 0.22);
+  background: rgba(201, 168, 76, 0.10);
+  border: 1px solid rgba(201, 168, 76, 0.22);
   color: var(--amarelo);
   font-size: 0.75rem;
   font-weight: 600;
@@ -460,8 +460,8 @@ a {
   width: clamp(120px, 15vw, 220px);
   height: clamp(120px, 15vw, 220px);
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  background: rgba(255, 215, 0, 0.10);
-  border: 1px solid rgba(255, 215, 0, 0.22);
+  background: rgba(201, 168, 76, 0.10);
+  border: 1px solid rgba(201, 168, 76, 0.22);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -496,7 +496,7 @@ a {
   padding: 60px 40px;
   text-align: center;
   margin-bottom: 20px;
-  border: 1px solid rgba(255, 215, 0, 0.20);
+  border: 1px solid rgba(201, 168, 76, 0.20);
 }
 
 .sobre-card-principal i {
@@ -649,7 +649,7 @@ a {
 
 .produto-card.destaque {
   background: var(--preto);
-  border-color: rgba(255, 215, 0, 0.3);
+  border-color: rgba(201, 168, 76, 0.3);
   transform: scale(1.03);
 }
 
@@ -682,8 +682,8 @@ a {
   align-items: center;
   justify-content: center;
   margin-bottom: 24px;
-  background: rgba(255, 215, 0, 0.10);
-  border: 1px solid rgba(255, 215, 0, 0.18);
+  background: rgba(201, 168, 76, 0.10);
+  border: 1px solid rgba(201, 168, 76, 0.18);
 }
 
 .produto-icone i {
@@ -764,14 +764,14 @@ a {
 .diferencial-item {
   text-align: center;
   padding: 36px 20px;
-  border: 1px solid rgba(255, 215, 0, 0.10);
+  border: 1px solid rgba(201, 168, 76, 0.10);
   border-radius: var(--raio-lg);
   transition: border-color var(--trans), background var(--trans);
 }
 
 .diferencial-item:hover {
-  border-color: rgba(255, 215, 0, 0.28);
-  background: rgba(255, 215, 0, 0.04);
+  border-color: rgba(201, 168, 76, 0.28);
+  background: rgba(201, 168, 76, 0.04);
 }
 
 .diferencial-item i {
@@ -897,14 +897,14 @@ a {
 }
 
 .contato-card:hover {
-  background: rgba(255, 215, 0, 0.05);
-  border-color: rgba(255, 215, 0, 0.18);
+  background: rgba(201, 168, 76, 0.05);
+  border-color: rgba(201, 168, 76, 0.18);
 }
 
 .contato-icone {
   width: 50px;
   height: 50px;
-  background: rgba(255, 215, 0, 0.10);
+  background: rgba(201, 168, 76, 0.10);
   border-radius: var(--raio);
   display: flex;
   align-items: center;
@@ -942,8 +942,8 @@ a {
 }
 
 .contato-cta {
-  background: rgba(255, 215, 0, 0.06);
-  border: 1px solid rgba(255, 215, 0, 0.14);
+  background: rgba(201, 168, 76, 0.06);
+  border: 1px solid rgba(201, 168, 76, 0.14);
   border-radius: var(--raio-lg);
   padding: 52px 40px;
   text-align: center;
@@ -1012,7 +1012,7 @@ a {
 .footer {
   background: #050505;
   padding: 56px 0 24px;
-  border-top: 1px solid rgba(255, 215, 0, 0.10);
+  border-top: 1px solid rgba(201, 168, 76, 0.10);
 }
 
 .footer-conteudo {
@@ -1055,7 +1055,7 @@ a {
 
 .footer-links a:hover {
   color: var(--amarelo);
-  background: rgba(255, 215, 0, 0.08);
+  background: rgba(201, 168, 76, 0.08);
 }
 
 .footer-social {
@@ -1321,11 +1321,11 @@ a {
   left: 0;
   height: 3px;
   width: 0%;
-  background: linear-gradient(90deg, var(--amarelo-escuro), var(--amarelo), #ffe066);
+  background: linear-gradient(90deg, var(--amarelo-escuro), var(--amarelo), #e0c070);
   z-index: 2001;
   border-radius: 0 3px 3px 0;
   transition: width 0.08s linear;
-  box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+  box-shadow: 0 0 8px rgba(201, 168, 76, 0.6);
 }
 
 /* ===== Hero — animações de entrada ===== */
@@ -1440,15 +1440,15 @@ a {
 /* ===== Produto destaque — glow permanente + intensifica no hover ===== */
 .produto-card.destaque {
   box-shadow:
-    0 0 0 1px rgba(255, 215, 0, 0.22),
+    0 0 0 1px rgba(201, 168, 76, 0.22),
     0 8px 40px rgba(0, 0, 0, 0.28);
 }
 
 .produto-card.destaque:hover {
   box-shadow:
-    0 0 0 1px rgba(255, 215, 0, 0.50),
+    0 0 0 1px rgba(201, 168, 76, 0.50),
     0 12px 48px rgba(0, 0, 0, 0.40),
-    0 0 36px rgba(255, 215, 0, 0.12);
+    0 0 36px rgba(201, 168, 76, 0.12);
 }
 
 /* ===== MVV itens — deslizar direita no hover ===== */
@@ -1468,7 +1468,7 @@ a {
 
 .depoimento-card:hover .avatar {
   transform: scale(1.12);
-  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.40);
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.40);
 }
 
 /* ===== Ícone do contato — bounce no hover ===== */
@@ -1512,7 +1512,7 @@ a {
 
 .etiqueta-secao:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.18);
+  box-shadow: 0 4px 12px rgba(201, 168, 76, 0.18);
 }
 
 /* ===== Sobre selo — pulso suave ===== */
